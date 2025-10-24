@@ -42,3 +42,16 @@ El sistema utiliza un modelo **AdaBoostClassifier** entrenado en un conjunto de 
 ### 1. Estructura del Proyecto
 
 Asegúrate de tener la siguiente estructura de archivos (asumiendo que los archivos `.html` están en la raíz y los estilos están en `styles/`):
+
+/OncoPredict ├── app.py # Servidor Flask ├── modelo_cancer_mama.pkl # El modelo entrenado ├── script.js # Lógica JS del frontend ├── index.html # Dashboard ├── loaddata.html # Cargar Datos ├── patienthistory.html # Historial ├── contact.html # Ayuda / Contacto └── styles/ ├── BaseStyle.css ├── Sidebar.css ├── Contact.css
+
+└── ...otros.css
+
+### 2. Configurar el Entorno Python
+
+```bash
+# Instalar dependencias
+pip install flask scikit-learn numpy flask-cors
+
+python app.py
+# El servidor estará disponible en: [http://127.0.0.1:5000](http://127.0.0.1:5000)
