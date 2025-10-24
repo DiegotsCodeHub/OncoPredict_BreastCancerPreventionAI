@@ -52,24 +52,26 @@ Asegúrate de tener la siguiente estructura de archivos (asumiendo que los archi
 ```bash
 # Instalar dependencias
 pip install flask scikit-learn numpy flask-cors
+```
 
 ### 3. Iniciar el Servidor Backend (API)
 
 ```bash
 python app.py
 # El servidor estará disponible en: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+```
 
 ### 4. Acceder a la Aplicación
 Abre directamente el archivo `index.html` en tu navegador. La aplicación se conectará a la API de Flask al hacer clic en el botón "Predecir Tipo de Tumor".
 
-##🌟 Características Clave
-*Carga de Datos: Formulario con 30 campos divididos en pestañas (Media, Error Estándar, Peor Caso) para ingresar las características del tumor.
+## 🌟 Características Clave
+* Carga de Datos: Formulario con 30 campos divididos en pestañas (Media, Error Estándar, Peor Caso) para ingresar las características del tumor.
 
-*Historial de Pacientes: Sección interactiva con botones de filtro (Todos, Benignos, Malignos).
+* Historial de Pacientes: Sección interactiva con botones de filtro (Todos, Benignos, Malignos).
 
-*Guía y Documentación: Acordeón interactivo (script.js y Contact.css) para explicar cada variable de entrada (Radius, Texture, etc.).
+* Guía y Documentación: Acordeón interactivo (script.js y Contact.css) para explicar cada variable de entrada (Radius, Texture, etc.).
 
-*Conexión Asíncrona: Uso de fetch en JavaScript para enviar datos al endpoint /predict y recibir la predicción en JSON.
+* Conexión Asíncrona: Uso de fetch en JavaScript para enviar datos al endpoint /predict y recibir la predicción en JSON.
 
-##⚠️ Nota de Uso Clínico
+## ⚠️ Nota de Uso Clínico
 Este sistema es una herramienta de apoyo diagnóstico y NO reemplaza el criterio clínico profesional. Los resultados generados por el modelo deben ser siempre evaluados por personal médico cualificado junto con otros métodos diagnósticos establecidos.
