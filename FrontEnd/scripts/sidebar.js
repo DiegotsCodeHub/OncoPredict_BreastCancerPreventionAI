@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Al cargar la página, establece el enlace activo
 // (Esto asume que usarás archivos HTML separados como LoadData.html, PatientHistory.html, etc.)
-const currentPath = window.location.pathname.split('/').pop().toLowerCase() || 'home.html';
+const currentPath = window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
 setActiveLink(currentPath);
