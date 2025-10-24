@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>OncoPredict - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/Sidebar.css">
+    <link rel="stylesheet" href="styles/Contact.css">
+    <link rel="stylesheet" href="styles/BaseStyle.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fas fa-chart-line logo-icon"></i>
+                <div class="logo-text-group">
+                    <div class="logoText">OncoPredict</div>
+                    <div class="logoMOTTO">Sistema de Predicción Oncológica</div>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="home.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="loaddata.html"><i class="fas fa-upload"></i> Cargar Datos</a></li>
+                    <li><a href="patientresults.html"><i class="fas fa-poll-h"></i> Resultados</a></li>
+                    <li><a href="patienthistory.html"><i class="fas fa-history"></i> Historial de Pacientes</a></li>
+                    <li class="activo"><a href="#"><i class="fas fa-question-circle"></i> Ayuda / Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <i class="fas fa-question-circle header-icon"></i>
+                <div>
+                    <h1>Ayuda y Documentación</h1>
+                    <p>Sistema de análisis y predicción de tumores</p>
+                </div>
+            </header>
+
+            <div class="card fast-guide-info-section">
+                <div class="guide-header">
+                    <i class="fas fa-book-open"></i>
+                    <h2>Guía Rápida de Uso</h2>
+                </div>
+                <p class="guide-subtitle">Aprenda a utilizar el sistema OncoPredict</p>
+
+                <ol class="guide-steps">
+                    <li>
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Cargar Datos del Paciente</h3>
+                            <p>Navegue a "Cargar Datos" e ingrese el ID del paciente y las características del tumor
+                                medidas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Realizar Predicción</h3>
+                            <p>Complete los campos numéricos con los datos clínicos y presione "Predecir Tipo de Tumor"
+                                para obtener el análisis.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Revisar Resultados</h3>
+                            <p>Analice el resultado de la predicción, métricas de confianza y visualizaciones en la
+                                sección "Resultados".</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Consultar Historial</h3>
+                            <p>Acceda al historial completo de análisis realizados y revise predicciones anteriores
+                                cuando lo necesite.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card tumor-variable-explication-features-section">
+                <div class="card-header">
+                    <h3>Explicación de Variables</h3>
+                    <p>Descripción de las características medidas del tumor</p>
+                </div>
+
+                <ul class="variable-accordion">
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Radius (Radio)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Distancia media desde el centro del núcleo celular hasta el perímetro. Se mide en unidades estándar y es un indicador importante del tamaño celular.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Texture (Textura)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Desviación estándar de los valores de escala de grises. Mide la variación en la intensidad de los píxeles en la imagen del núcleo celular.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Perimeter (Perímetro)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Longitud total del contorno del núcleo celular. Un perímetro irregular puede indicar malignidad.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Area (Área)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Superficie total del núcleo celular medida en píxeles cuadrados. Células más grandes pueden ser indicativas de malignidad.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Smoothness (Suavidad)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Variación local en la longitud del radio. Mide qué tan suave o irregular es el contorno del núcleo.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Compactness (Compacidad)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Calculada como (perímetro² / área - 1.0). Mide qué tan compacta es la forma del núcleo celular.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Concavity (Concavidad)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Severidad de las porciones cóncavas del contorno celular. Núcleos con alta concavidad pueden ser malignos.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Symmetry (Simetría)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Medida de la simetría del núcleo celular. La asimetría puede ser un indicador de malignidad.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="variable-title">Fractal Dimension (Dimensión Fractal)</span>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Aproximación de la complejidad del contorno usando "aproximación costera - 1". Mide la irregularidad del borde celular.</p>   
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card Model-explication-features-section">
+                <div class="card-header">
+                    <h3>Información sobre los Modelos</h3>
+                    <p>Detalles técnicos del clasificador utilizado</p>
+                </div>
+
+                <div class="model-explanation">
+                    <h4>AdaBoostClassifier</h4>
+                    <p>
+                        **AdaBoost (Adaptive Boosting)** es un algoritmo de machine learning que combina múltiples
+                        clasificadores débiles para crear un clasificador fuerte. El modelo ha sido entrenado con un
+                        dataset de características de tumores de mama y alcanza una precisión del **96.5%** en pruebas
+                        de validación.
+                    </p>
+                </div>
+
+                <div class="important-note">
+                    <i class="fas fa-info-circle note-icon"></i>
+                    <div class="note-content">
+                        <span class="note-title">Nota Importante</span>
+                        <p>
+                            Este sistema es una herramienta de apoyo diagnóstico. Los resultados deben ser siempre
+                            evaluados por personal médico cualificado. No reemplaza el criterio clínico profesional ni
+                            otros métodos diagnósticos establecidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="metrics-grid-2-cols">
+                    <div class="metric-box">
+                        <span class="metric-label">Precisión</span>
+                        <span class="metric-value">96.5%</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">AUC-ROC</span>
+                        <span class="metric-value">0.98</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Sensibilidad</span>
+                        <span class="metric-value">97.2%</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-label">Especificidad</span>
+                        <span class="metric-value">95.8%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card contact-support-section">
+                <div class="card-header">
+                    <h3>Soporte y Contacto</h3>
+                    <p>¿Necesita ayuda adicional? Contacte a nuestro equipo de soporte.</p>
+                </div>
+
+                <div class="contact-links-grid">
+                    <a href="mailto:soporte@oncologiapredictiva.com" class="contact-link-item">
+                        <i class="fas fa-envelope"></i>
+                        <span class="title">Correo Electrónico</span>
+                        <span class="subtitle">soporte@oncologiapredictiva.com</span>
+                    </a>
+
+                    <a href="tel:+5212345678" class="contact-link-item">
+                        <i class="fas fa-phone"></i>
+                        <span class="title">Llamada</span>
+                        <span class="subtitle">+52 123 456 7890</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

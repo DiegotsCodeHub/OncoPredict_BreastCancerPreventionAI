@@ -1,0 +1,93 @@
+/* ==================================== */
+/* sidebar.css - Estilos del SIDEBAR */
+/* ==================================== */
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área del Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.logoText {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #007bff;
+    line-height: 1.2;
+}
+
+.logoMOTTO {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* Navegación */
+.navegacion h3 {
+    font-size: 0.8rem;
+    color: #adb5bd;
+    text-transform: uppercase;
+    padding: 0 20px 10px 20px;
+    font-weight: 500;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion li {
+    padding: 10px 20px;
+    margin: 5px 0;
+    transition: background-color 0.2s;
+}
+
+.navegacion li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.navegacion li a i {
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+.navegacion li:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para el elemento activo: "Inicio" */
+.navegacion li.activo {
+    background-color: #e6f0ff;
+    border-left: 4px solid #007bff;
+    padding-left: 16px;
+}
+
+.navegacion li.activo a {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.navegacion li.activo a i {
+    color: #007bff;
+}

@@ -1,0 +1,345 @@
+/* ==================================================== */
+/* Contact.css - Estilos de la página de Ayuda / Contacto */
+/* ==================================================== */
+
+/* Ajuste del Encabezado para la página de Ayuda */
+.main-header .header-icon {
+    /* Usar el color del icono de ayuda (fas fa-question-circle) */
+    color: #ffc107; /* Amarillo/Naranja para ayuda */
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* --- Estilos de la Guía Rápida (fast-guide-info-section) --- */
+
+.fast-guide-info-section {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* Encabezado de la Guía (Ícono y Título) */
+.guide-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.guide-header i {
+    font-size: 1.25rem;
+    color: #007bff; /* Azul primario */
+    margin-right: 10px;
+}
+
+.guide-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.guide-subtitle {
+    color: #6c757d;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+/* Lista de Pasos */
+.guide-steps {
+    list-style: none; /* Quitamos la numeración por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+.guide-steps li {
+    display: flex; /* Para alinear el número con el contenido */
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+/* Estilo del Número del Paso (El círculo azul) */
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    border-radius: 50%; /* Lo hace circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    flex-shrink: 0; /* Evita que se encoja */
+    margin-right: 15px;
+}
+
+/* Contenido del Paso (Título y Descripción) */
+.step-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.step-content p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ==================================================== */
+/* Contact.css - Estilos de la Explicación de Variables */
+/* ==================================================== */
+
+/* --- Sección de Explicación de Variables (Acordeón) --- */
+
+.tumor-variable-explication-features-section {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.tumor-variable-explication-features-section .card-header {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.tumor-variable-explication-features-section .card-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.tumor-variable-explication-features-section .card-header p {
+    color: #6c757d;
+}
+
+/* Estilos de la lista de acordeón */
+.variable-accordion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-item {
+    /* El ítem no necesita borde, el separador lo dará el header */
+    margin: 0;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee; /* Separador sutil */
+    transition: background-color 0.1s;
+}
+
+/* El último elemento no lleva borde inferior */
+.accordion-item:last-child .accordion-header {
+    border-bottom: none;
+}
+
+/* Ocultar el separador del contenido en el último elemento (ya que el header lo hace) */
+.accordion-item:last-child .accordion-content {
+    border-bottom: none;
+}
+
+.accordion-header:hover {
+    background-color: #fafafa; /* Efecto hover */
+}
+
+.variable-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.accordion-icon {
+    font-size: 0.8rem;
+    color: #6c757d;
+    transition: transform 0.2s;
+}
+
+.accordion-item.open .accordion-header {
+    background-color: #f8f9fa;
+}
+.accordion-item.open .accordion-icon {
+    margin-right: 0;
+    transform: rotate(180deg);
+    color: #007bff;
+}
+.accordion-content {
+/* Ocultar por defecto */
+    display: none; 
+    padding: 10px 0 15px 0; /* Espaciado interno */
+    margin-left: 45px; /* Indentación para que no se alinee con el borde */
+    border-bottom: 1px solid #eee; /* Asegura el separador incluso si el header no lo tiene */
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ==================================================== */
+/* Contact.css - Estilos del Modelo de Explicación */
+/* ==================================================== */
+
+/* --- Sección de Explicación del Modelo (Model-explication-features-section) --- */
+
+.Model-explication-features-section {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.Model-explication-features-section .card-header {
+    margin-bottom: 20px;
+    display: block; /* Asegura que el título y subtítulo se apilen */
+}
+
+.model-explanation h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.model-explanation p {
+    color: #495057;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+/* --- Estilos de la Nota Importante --- */
+
+.important-note {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #e6f0ff; /* Fondo azul muy claro */
+    border: 1px solid #cce5ff;
+    border-radius: 6px;
+}
+
+.note-icon {
+    font-size: 1.2rem;
+    color: #007bff; /* Icono azul */
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.note-content .note-title {
+    font-weight: 600;
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.note-content p {
+    margin: 0;
+    color: #495057;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* --- Estilos de las Métricas de Rendimiento --- */
+
+.metrics-grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.metric-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: #ffffff; /* Fondo blanco dentro de la tarjeta */
+}
+
+.metric-box .metric-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.metric-box .metric-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* ==================================================== */
+/* Contact.css - Estilos de la página de Ayuda / Contacto */
+/* ... (estilos previos de la Guía Rápida) ... */
+/* ==================================================== */
+
+/* --- Estilos para la Sección de Contacto y Soporte (contact-support-section) --- */
+
+.contact-support-section {
+    padding: 30px;
+}
+
+.contact-support-section .card-header {
+    margin-bottom: 25px;
+    /* Ajuste para que el texto se alinee */
+    display: block; 
+}
+
+.contact-support-section .card-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff; /* Título principal en azul */
+}
+
+/* Contenedor de enlaces de contacto (diseño de cuadrícula) */
+.contact-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columna para métodos de contacto */
+    gap: 20px;
+}
+
+.contact-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-color: #f8f9fa; /* Fondo sutil */
+    text-align: center;
+}
+
+/* Efecto hover */
+.contact-link-item:hover {
+    background-color: #ffffff;
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+}
+
+.contact-link-item i {
+    font-size: 2rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.contact-link-item span.title {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-link-item span.subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+}

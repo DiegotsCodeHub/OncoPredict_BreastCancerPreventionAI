@@ -1,0 +1,74 @@
+/* ==================================================== */
+/* PatientResults.css - Estilos de la página de Resultados */
+/* ==================================================== */
+
+/* Ajuste del Encabezado para la página de Resultados */
+.main-header .header-icon {
+    /* Usar un color apropiado para resultados/gráficos */
+    color: #28a745; /* Verde */
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Estilos de la Tarjeta de Resultados/Acción */
+.action-card-AnalisisResultados {
+    /* Permitir que la tarjeta ocupe el espacio de la cuadrícula si existiera,
+       pero aquí lo centraremos fuertemente para el estado vacío. */
+    width: 100%;
+    min-height: 400px; /* Le da una altura visible */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* --- Estado Vacío (Empty State) para Resultados --- */
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px; /* Padding interno */
+}
+
+/* Icono del Gráfico (Simulado con font-awesome o un ícono svg/imagen) */
+/* El ícono de la imagen parece ser un gráfico de barras estilizado. 
+   Usaremos una clase genérica con color gris sutil. */
+.empty-state .empty-icon {
+    /* Si estás usando Font Awesome, puedes usar un ícono de gráfico (aunque la imagen es custom) */
+    font-size: 3.5rem; 
+    color: #adb5bd; /* Gris claro */
+    margin-bottom: 20px;
+    
+    /* Si estuvieras usando la imagen, se reemplazaría con CSS de fondo */
+    /* Por ejemplo: background-image: url('assets/graph_icon.svg'); */
+}
+
+.empty-state p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+}
+
+.empty-state p:last-of-type {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Estilo del Enlace de Acción */
+.empty-state .link-action {
+    color: #007bff; /* Azul de enlace */
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.empty-state .link-action:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

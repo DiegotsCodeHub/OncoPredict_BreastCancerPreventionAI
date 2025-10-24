@@ -1,0 +1,146 @@
+/* ==================================== */
+/* inicio.css - Estilos de la Página de INICIO */
+/* ==================================== */
+
+/* Estilo del ícono de encabezado en la página de inicio */
+.main-header .header-icon {
+    color: #adb5bd;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* --- Tarjetas de Métrica --- */
+
+.metric-card-Total, .metric-card-Benignos, .metric-card-Malignos, .metric-card-Precision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.metric-card-Total .label, .metric-card-Benignos .label, .metric-card-Malignos .label, .metric-card-Precision .label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.metric-card-Total .value, .metric-card-Benignos .value, .metric-card-Malignos .value, .metric-card-Precision .value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+}
+
+.metric-card-Total .sub-label, .metric-card-Benignos .sub-label, .metric-card-Malignos .sub-label, .metric-card-Precision .sub-label {
+    font-size: 0.8rem;
+    color: #adb5bd;
+    margin-top: 10px;
+}
+
+/* Colores de iconos de tendencia */
+.metric-icon {
+    font-size: 1rem;
+}
+.metric-icon.blue { color: #007bff; }
+.metric-icon.green { color: #28a745; }
+.metric-icon.red { color: #dc3545; }
+.metric-icon.purple { color: #6f42c1; }
+
+/* --- Tarjetas de Acción --- */
+
+.action-card-AnalisisNuevo, .action-card-Historial {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.action-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.action-icon.purple {
+    color: #6f42c1;
+}
+
+.action-card-AnalisisNuevo .title, .action-card-Historial .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.action-card-AnalisisNuevo .subtitle, .action-card-Historial .subtitle {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Botones Comunes en Inicio */
+.btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    margin-top: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+/* --- Análisis Recientes y Estado Vacío --- */
+
+.action-card-AnalisisRecientes {
+    min-height: 250px;
+    padding-bottom: 0;
+}
+
+.subtitle-recientes {
+    color: #6c757d;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.empty-icon {
+    font-size: 3rem;
+    color: #adb5bd;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0 0 15px 0;
+}
+
+.link-action {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.2s;
+}

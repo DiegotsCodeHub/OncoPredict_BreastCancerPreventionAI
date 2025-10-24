@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>OncoPredict - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/Sidebar.css">
+    <link rel="stylesheet" href="styles/Home.css">
+    <link rel="stylesheet" href="styles/BaseStyle.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fas fa-chart-line logo-icon"></i>
+                <div class="logo-text-group">
+                    <div class="logoText">OncoPredict</div>
+                    <div class="logoMOTTO">Sistema de Predicción Oncológica</div>
+                </div>
+            </div>
+
+            <nav class="navegacion">
+                <h3>Navegación</h3>
+                <ul>
+                    <li class="activo"><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="loaddata.html"><i class="fas fa-upload"></i> Cargar Datos</a></li>
+                    <li><a href="patientresults.html"><i class="fas fa-poll-h"></i> Resultados</a></li>
+                    <li><a href="patienthistory.html"><i class="fas fa-history"></i> Historial de Pacientes</a></li>
+                    <li><a href="contact.html"><i class="fas fa-question-circle"></i> Ayuda / Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <i class="fas fa-tachometer-alt header-icon"></i>
+                <div>
+                    <h1>Dashboard Principal</h1>
+                    <p>Sistema de análisis y predicción de tumores</p>
+                </div>
+            </header>
+
+            <div class="grid-4-cols">
+                <div class="card metric-card-Total">
+                    <span class="label">Total Análisis <i class="fas fa-chart-line metric-icon blue"></i></span>
+                    <span class="value">0</span>
+                    <span class="sub-label">Predicciones realizadas</span>
+                </div>
+
+                <div class="card metric-card-Benignos">
+                    <span class="label">Tumores Benignos <i class="fas fa-chart-line metric-icon green"></i></span>
+                    <span class="value">0</span>
+                    <span class="sub-label">Resultados positivos</span>
+                </div>
+
+                <div class="card metric-card-Malignos">
+                    <span class="label">Tumores Malignos <i class="fas fa-chart-line metric-icon red"></i></span>
+                    <span class="value">0</span>
+                    <span class="sub-label">Requieren atención</span>
+                </div>
+
+                <div class="card metric-card-Precision">
+                    <span class="label">Precisión del Modelo <i class="fas fa-chart-line metric-icon purple"></i></span>
+                    <span class="value">96.5%</span>
+                    <span class="sub-label">AdaBoost Classifier</span>
+                </div>
+            </div>
+
+            <div class="grid-2-cols">
+                <div class="card action-card-AnalisisNuevo">
+                    <i class="fas fa-cloud-upload-alt action-icon"></i>
+                    <span class="title">Nuevo Análisis</span>
+                    <span class="subtitle">Cargar datos de un nuevo paciente</span>
+                    <button class="btn-primary">Iniciar Predicción</button>
+                </div>
+                <div class="card action-card-Historial">
+                    <i class="fas fa-history action-icon purple"></i>
+                    <span class="title">Historial</span>
+                    <span class="subtitle">Ver análisis anteriores</span>
+                    <button class="btn-secondary">Ver Historial</button>
+                </div>
+            </div>
+
+            <div class="card action-card-AnalisisRecientes">
+                <h2>Análisis Recientes</h2>
+                <span class="subtitle-recientes">Últimas predicciones realizadas</span>
+                <div class="empty-state">
+                    <i class="fas fa-users empty-icon"></i>
+                    <p>No hay predicciones realizadas aún</p>
+                    <a href="#" class="link-action">Realizar primer análisis</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="scripts/sidebar.js"></script>
+</body>
+
+</html>

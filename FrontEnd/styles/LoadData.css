@@ -1,0 +1,162 @@
+/* ==================================== */
+/* formulario.css - Estilos del FORMULARIO */
+/* ==================================== */
+
+/* Estilo del ícono de encabezado en la página del formulario */
+.main-header .header-icon {
+    color: #28a745; /* Color verde para el ícono de carga */
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Estilo general de los títulos de sección del formulario */
+.card-header h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.card-header p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* --- Información del Paciente --- */
+
+.patient-info-section {
+    margin-bottom: 20px;
+}
+
+.input-group-patient {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.id-input-container {
+    flex-grow: 1;
+}
+
+.id-input-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.id-input-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.load-data-btn {
+    background-color: transparent;
+    color: #6c757d;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-weight: 500;
+    width: auto;
+    margin-top: 0;
+}
+.load-data-btn i {
+    margin-right: 5px;
+}
+
+/* --- Características del Tumor (Pestañas) --- */
+
+.tumor-features-section {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.tabs-container {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #6c757d;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab-button.active {
+    color: #007bff;
+    font-weight: 600;
+    border-bottom: 3px solid #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-col label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.feature-col input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-top: 5px;
+}
+
+.feature-col label:first-child {
+    margin-top: 0;
+}
+
+/* --- Controles Inferiores del Formulario --- */
+
+.form-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.btn-clean {
+    background-color: transparent;
+    color: #6c757d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.btn-predict {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-predict i {
+    margin-right: 8px;
+}
