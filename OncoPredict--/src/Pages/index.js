@@ -1,0 +1,5 @@
+export { default as PrincipalPage } from './PrincipalPage'
+export {default as LoadDataPage } from './LoadDataPage'
+export { default as ResultsPage } from './ResultsPage'
+export { default as HistoryPage } from './HistoryPage'
+export { default as HelpPage } from './HelpPage'
